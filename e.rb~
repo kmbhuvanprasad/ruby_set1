@@ -1,0 +1,7 @@
+begin
+	f1=File.open('ttest.txt','w+')
+	# f1.syswrite("bhuvan prasad")
+	# f1.sysread(6)
+	x=IO.readlines('ttest.txt')
+	puts x
+end

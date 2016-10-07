@@ -14,16 +14,13 @@ puts "square of 6 is #{numsq2}"
 total=numsq1+numsq2
 z=p total.to_i
 result=Array.new
-result=['61']
+result=[z]
 puts result
 my_details=Array.new
 my_details=['Bhuvan','vviet','Qwinix']
 puts my_details
 my_details.concat(result)
 puts my_details
-
-
-
 
 #-----------------pgm3-------------------------
 class Number
