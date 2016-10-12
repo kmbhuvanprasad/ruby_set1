@@ -27,7 +27,7 @@ class Son < Parent
    end
 end
 son=Son.new
- son.firstName
+puts son.firstName
 son.secname
 son.lname
 son.fullName

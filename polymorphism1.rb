@@ -1,90 +1,87 @@
 # Create a class called Animal.
 # Define five other animals which should have all the properties of animal.
 # Define a method which represents the noise of the animal.
+
 #  class Animal
 #  	def noise(b)
 #  		b.noise
 #  	end
 #  end
-# class Lion < Animal
+# class Lion 
 # 	def noise
 # 		puts " Lion roars"
 # 	end
 # end
-# class Cat < Animal
+# class Cat
 # 	def noise
 # 		puts " Cat meows"
 # 	end
 # end
-# class Dog < Animal
+# class Dog 
 # 	def noise
 # 		puts " Dog barks"
 # 	end	
 # end
-# class Cow < Animal
+# class Cow 
 # 	def noise
 # 		puts " Cow ambaa"
 # 	end
 # end
-# class Elephant < Animal
+# class Elephant 
 # 	def noise
 # 		puts "Elephant trumphs"
 # 	end
 # end
 
 # animal=Animal.new
-# b=Lion.new
-# animal.noise(b)
-# b=Cat.new
-# animal.noise(b)
-# b=Dog.new
-# animal.noise(b)
-# b=Cow.new
-# animal.noise(b)
-# b=Elephant.new
-# animal.noise(b)
+
+# lion=Lion.new
+# animal.noise(lion) # this is as same as calling lion.noise, but here we are calling object defined in animal class
+
+# cat=Cat.new
+# animal.noise(cat)
+
+# dog=Dog.new
+# animal.noise(dog)
+
+# cow=Cow.new
+# animal.noise(cow)
+
+# elephant=Elephant.new
+# animal.noise(elephant)
 
 #***********************************************************
 
 
 
 class Animal
- 	def initialize(noise)
+ 	def noise(noise)
  	@noise=noise
+ 	puts @noise
  	end
 end
 class Lion < Animal
-	def noise
-		puts @noise
-	end
+	
 end
 class Cat < Animal
-	def noise
-		puts @noise
-	end
+	
 end
 class Dog < Animal
-	def noise
-		puts @noise
-	end	
+	
 end
 class Cow < Animal
-	def noise
-		puts @noise
-	end
+	
 end
 class Elephant < Animal
-	def noise
-		puts "Elephant trumphs"
-	end
+	
 end
-lion=Lion.new("Lion roars")
-lion.noise
-cat=Cat.new("Cat meows")
-cat.noise
-dog=Dog.new("Dog barks")
-dog.noise
-cow=Cow.new("Cow ambaa")
-cow.noise
-elephant=Elephant.new("Elephant trumphs")
-elephant.noise
+lion=Lion.new
+lion.noise("Lion roars")
+cat=Cat.new
+cat.noise("Cat meows")
+dog=Dog.new
+dog.noise("Dog barks")
+cow=Cow.new
+cow.noise("Cow ambaa")
+elephant=Elephant.new
+elephant.noise("Elephant trumphs")
